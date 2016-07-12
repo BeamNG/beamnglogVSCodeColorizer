@@ -1,0 +1,52 @@
+{
+  "fileTypes": [
+    "log"
+  ],
+  "name": "beamnglog",
+  "patterns": [
+    { "match": "^--.*$"
+    , "name": "comment.line.double-dash.beamnglog"
+    , "comment": "Comment"
+    },
+    { "match": "\\[[a-zA-Z0-9:._-]*\\]"
+    , "name": "constant.language.beamnglog"
+    , "comment": "Module"
+    },
+    { "match": "--"
+    , "name": "constant.language.beamnglog"
+    , "comment": "Module"
+    },
+    { "match": "^[\\s\\d\\.]*"
+    , "name": "constant.language.beamnglog"
+    , "comment": "Line Beginnings"
+    },
+    { "begin": "\\|(A|I)\\|"
+    , "end": "\\|"
+    , "name": "string.quoted.single.beamnglog"
+    , "comment": "Info"
+    },
+    { "begin": "\\|(D)\\|"
+    , "end": "\\|"
+    , "name": "keyword.control.less.beamnglog"
+    , "comment": "Debug"
+    },
+    { "begin": "\\|(G)\\|"
+    , "end": "\\|"
+    , "name": "constant.numeric.beamnglog"
+    , "comment": "Debug"
+    },
+    { "begin": "\\|(W)\\|"
+    , "end": "\\|"
+    , "comment": "Warning"
+    , "name": "keyword.control.beamnglog"
+    },
+    { "begin": "\\|(E)\\|"
+    , "end": "\\|"
+    , "name": "invalid.illegal.beamnglog"
+    , "comment": "Error"
+    }
+  ],
+  "repository": {},
+  "scopeName": "text.beamng",
+  "uuid": "5fb77f58-2721-11e5-b345-feff819cdc9f"
+}

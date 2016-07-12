@@ -1,0 +1,26 @@
+{
+    "name": "beamng",
+    "displayName": "beamng.log",
+    "description": "Language highlighting for BeamNG Log-files",
+    "version": "0.0.1",
+    "publisher": "BeamNG",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "beamnglog",
+            "aliases": ["BeamNG Log", "beamnglog"],
+            "extensions": [".log"],
+            "configuration": "./beamnglog.configuration.json"
+        }],
+        "grammars": [{
+            "language": "beamnglog",
+            "scopeName": "text.beamng",
+            "path": "./syntaxes/beamnglog.json"
+        }]
+    }
+}
